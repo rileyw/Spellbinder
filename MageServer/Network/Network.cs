@@ -381,7 +381,7 @@ namespace MageServer
                         }
                         default:
                         {
-                            //Program.ServerForm.AdminLog.WriteMessage(String.Format("\n Function: {0}\n{1}", data[position + 11], BitConverter.ToString(inStream.ToArray())), Color.Blue);
+                            Program.ServerForm.AdminLog.WriteMessage(String.Format("\n Function: {0}\n{1}", data[position + 11], BitConverter.ToString(inStream.ToArray())), Color.Blue);
                             break;
                         }
                     }

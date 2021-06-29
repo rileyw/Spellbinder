@@ -1,185 +1,509 @@
-;
-;				Roarc Catacombs
-;
+
+;World File for Maya Ruins     
 
 ;=========================================================================
-; Monster Generators
+; Monster Generators 
 ;=========================================================================
 [mongendefs]
-nummongens=0
+nummongens= 0
+
+[mongen00]
+object= 1
+maxnum= 3
+chance= 50
+timer= 6000
+xmaze= 66
+ymaze= 82
+single= 1
+
+[mongen01]
+object= 2
+maxnum= 3
+chance= 50
+timer= 6000
+xmaze= 81
+ymaze= 52
+single= 0
+
+[mongen02]
+object= 3
+maxnum= 3
+chance= 50
+timer= 6000
+xmaze= 48
+ymaze= 52 
+single= 0
+
+[mongen03]
+object= 2
+maxnum= 3
+chance= 50
+timer= 6000
+xmaze= 63
+ymaze= 72
+single= 1
+
 
 ;=========================================================================
-; Team Starting Areas
+; Team Starting 
 ;=========================================================================
 [noteam]
-startx=13
-starty=17
-raisex=13
-raisey=17
+startx= 44
+starty= 46 
+raisex= 44
+raisey= 46 
+starta= 0  
 
 [chaos]
-startx=30
-starty=63
-raisex=13
-raisey=17
+startx= 10
+starty= 72 
+starta= 90 
+raise1x= 20
+raise1y= 62
+raise2x= 29
+raise2y= 74
+raise3x= 46
+raise3y= 96
+raise4x= 56
+raise4y= 72
+raise5x= 67
+raise5y= 87
 
 [order]
-startx=61
-starty=102
-raisex=13
-raisey=17
+startx= 121  
+starty= 75
+starta= 270
+raise1x= 112
+raise1y= 83
+raise2x= 102
+raise2y= 64
+raise3x= 91
+raise3y= 102
+raise4x= 73
+raise4y= 70
+raise5x= 80
+raise5y= 80
 
 [balance]
-startx=90
-starty=63
-raisex=13
-raisey=17
+startx= 64
+starty= 14
+starta= 180
+raise1x= 74
+raise1y= 23
+raise2x= 64
+raise2y= 41
+raise3x= 70
+raise3y= 53
+raise4x= 52
+raise4y= 46
+raise5x= 70
+raise5y= 70
 
 ;=========================================================================
 ; Light
 ;=========================================================================
 [light]
-ambient=10
-outdoor=16
-intensity=75
+ambient= 12
+outdoor= 18
+intensity= 96
+
+
 
 ;=========================================================================
-; Earthblood Pools
+;Earthnodes
 ;=========================================================================
+;links for nexuses are 100, 101, and 102
+
 [earthblooddefs]
-numearthblood=13
+numearthblood=14
 
-[earthblood00]
-power=37
-power_original=40
-neutraltexture=1
-balancetexture=1
-ordertexture=1
-chaostexture=1
+[earthblood00]  
+power= 8
+fixture= 17
+link1=9
+link2=5  
+link3=10 
+link4=1
+link5=2
 
-[earthblood01]
-power=55
-power_original=65
-neutraltexture=1
-balancetexture=1
-ordertexture=1
-chaostexture=1
+[earthblood01]  
+power= 8
+fixture= 13
+link1=9  
+link2=3  
+link3=6  
+link4=0
+link5=2
 
-[earthblood02]
-power=55
-power_original=65
-neutraltexture=1
-balancetexture=1
-ordertexture=1
-chaostexture=1
+[earthblood02]  
+power= 8
+fixture= 19
+link1=10 
+link2=6  
+link3=4  
+link4=0
+link5=1
 
-[earthblood03]
-power=37
-power_original=40
-neutraltexture=1
-balancetexture=1
-ordertexture=1
-chaostexture=1
+[earthblood03]  
+power= 8
+fixture= 11
+link1=11 
+link2=1 
+link3=9
+link4=6
 
-[earthblood04]
-power=55
-power_original=65
-neutraltexture=1
-balancetexture=1
-ordertexture=1
-chaostexture=1
+[earthblood04]  
+power= 8
+fixture= 21
+link1=13 
+link2=2  
+link3=10
+link4=6
 
-[earthblood05]
-power=25
-power_original=35
-neutraltexture=1
-balancetexture=1
-ordertexture=1
-chaostexture=1
+[earthblood05]  
+power= 8
+fixture= 16
+link1=12 
+link2=0   
+link3=10
+link4=9
 
-[earthblood06]
-power=25
-power_original=35
-neutraltexture=1
-balancetexture=1
-ordertexture=1
-chaostexture=1
+[earthblood06]  
+power= 9  
+fixture= 18
+link1=1  
+link2=2  
+link3=3
+link4=4
+radius=6
 
-[earthblood07]
-power=25
-power_original=35
-neutraltexture=1
-balancetexture=1
-ordertexture=1
-chaostexture=1
+;[earthblood07]  
+power= 8
+fixture= 14
 
-[earthblood08]
-power=25
-power_original=35
-neutraltexture=1
-balancetexture=1
-ordertexture=1
-chaostexture=1
+;[earthblood08]  
+power= 8
+fixture= 22
 
-[earthblood09]
-power=37
-power_original=40
-neutraltexture=1
-balancetexture=1
-ordertexture=1
-chaostexture=1
+[earthblood09]  
+power= 8 
+fixture= 12
+link1=1  
+link2=0   
+link3=3
+link4=5
 
-[earthblood10]
-power=55
-power_original=65
-neutraltexture=1
-balancetexture=1
-ordertexture=1
-chaostexture=1
+[earthblood10]  
+power= 8
+fixture= 20
+link1=2  
+link2=0   
+link3=5
+link4=4
 
-[earthblood11]
-power=25
-power_original=35
-neutraltexture=1
-balancetexture=1
-ordertexture=1
-chaostexture=1
+[earthblood11]  
+power= 9
+fixture= 27
+link1=102
+link2=3   
 
-[earthblood12]
-power=25
-power_original=35
-neutraltexture=1
-balancetexture=1
-ordertexture=1
-chaostexture=1
+[earthblood12]  
+power= 9
+fixture= 15
+link1=100
+link2=5   
+
+[earthblood13]  
+power= 9
+fixture= 23
+link1=101
+link2=4   
 
 ;=========================================================================
-; Shrines
+;Nexuses
 ;=========================================================================
+
 [shrinedefs]
 numshrines=3
 
 [shrine00]
-power=100
+power= 100
 alignment=balance
-bias=100
+bias= 100
+fixture= 25
+link1= 12
 
 [shrine01]
-power=100
+power= 100
 alignment=order
-bias=100
+bias= 100
+fixture= 26
+link1= 13
 
 [shrine02]
-power=100
+power= 100
 alignment=chaos
-bias=100
+bias= 100
+fixture= 24
+link1= 11
 
 ;=========================================================================
-; Map Data
+; Sound Regions
 ;=========================================================================
+
+[soundregiondefs]
+numsoundregions=0
+
+[soundregion00]
+x1=33
+y1=32
+x2=103
+y2=104
+sound=13
+volume=-30
+
+;=========================
+;Stairslopes
+;=========================
+
+[stairslopes]
+tile01=12
+tile02=10
+tile03=9
+tile04=11
+
+;============================
+;Room Views
+;============================
+
+[room-views]
+numrooms=28
+
+[room00]
+minx=7 
+miny=57
+maxx=25
+maxy=87
+views=1,3
+
+[room01]
+minx=26
+miny=63
+maxx=30
+maxy=86
+views=0,2,3
+
+[room02]
+minx=31
+miny=63
+maxx=43
+maxy=72
+views=1,3,6
+
+[room03]
+minx=31
+miny=73
+maxx=43
+maxy=90
+views=2,1,7,6,0,13
+
+[room04]
+minx=38
+miny=45
+maxx=50
+maxy=57
+views=10,5,6
+
+[room05]
+minx=38
+miny=58
+maxx=51
+maxy=62
+views=4,6
+
+[room06]
+minx=44
+miny=63
+maxx=53
+maxy=84
+views=2,3,5,12,4
+
+[room07]
+minx=44
+miny=87
+maxx=54
+maxy=101
+views=3,13
+
+[room08]
+minx=50
+miny=11
+maxx=78
+maxy=29
+views=9
+
+[room09]
+minx=53
+miny=30
+maxx=75
+maxy=43
+views=10,8
+
+[room10]
+minx=51
+miny=44
+maxx=76
+maxy=57
+views=4,14,9,11
+
+[room11]
+minx=54
+miny=58
+maxx=74
+maxy=68
+views=10,12
+
+[room12]
+minx=54
+miny=69
+maxx=75
+maxy=88
+views=11,6,16,18,13,15,20
+
+[room13]
+minx=55
+miny=89
+maxx=71
+maxy=101
+views=7,12,19,3
+
+[room14]
+minx=77
+miny=42
+maxx=92
+maxy=57
+views=10,15,16
+
+[room15]
+minx=75
+miny=58
+maxx=83
+maxy=67
+views=14,20,16,12,24
+
+[room16]
+minx=76
+miny=68
+maxx=83
+maxy=76
+views=15,14,12,17,20
+
+[room17]
+minx=76
+miny=77
+maxx=81
+maxy=80
+views=16,12
+
+[room18]
+minx=76
+miny=83
+maxx=85
+maxy=89
+views=12,21,19
+
+[room19]
+minx=72
+miny=90
+maxx=86
+maxy=100
+views=18,13,23,21
+
+[room20]
+minx=84
+miny=60
+maxx=88
+maxy=77
+views=15,24,16,12
+
+[room21]
+minx=82
+miny=78
+maxx=87
+maxy=82
+views=18,22,19
+
+[room22]
+minx=88
+miny=80
+maxx=90
+maxy=91
+views=21,23
+
+[room23]
+minx=87
+miny=92
+maxx=94
+maxy=103
+views=22,25,19,24
+
+[room24]
+minx=89
+miny=59
+maxx=98
+maxy=79
+views=20,26,26,23,27
+
+[room25]
+minx=92
+miny=80
+maxx=98
+maxy=91
+views=24,26,23,27
+
+[room26]
+minx=99
+miny=59
+maxx=105
+maxy=86
+views=24,27,25,20
+
+[room27]
+minx=106
+miny=61
+maxx=124
+maxy=90
+views=26,24,25
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 [map]
-grid_id=02
-map_y_pos=0
-map_x_pos=0
-map_y_offset=27
-map_x_offset=18
+minx=6 
+miny=6 
+maxx=125
+maxy=125
+
